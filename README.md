@@ -56,6 +56,7 @@ AndroidManifest.xmlはインポートされる物をそのまま利用してビ�
 3.testAdMainシーンを開きます
 
 もしも2.のアドフリSDKを導入前にシーンを開いた場合、下記のヒエラルキーにあるPrefabが壊れていると思います。
+
 その場合はAssets/Plugins/Adfurikunからヒエラルキー上にセットしてください。
 
 - AdfurikunMovieNativeAdViewUtility
@@ -74,7 +75,9 @@ AndroidManifest.xmlはインポートされる物をそのまま利用してビ�
 ## Usage
 
 1.実行したら各ボタンを押して下さい。
-画像はエディター実行時のものです。便宜上画像では3画面を1つにくっつけていますが
+画像はエディター実行時のものです。
+
+便宜上画像では3画面を1つにくっつけていますが
 各画面はスワイプで移動できます。
 ![h3](https://user-images.githubusercontent.com/7788005/31547260-931ade6e-b061-11e7-9759-ea04d9d5a1d7.jpg)
 
@@ -90,6 +93,8 @@ MovieInterAdManager movieAd = GameObject.Find("MovieInterAdManager").GetComponen
 StartCoroutine(movieAd.showInterAdMovie());
 ~~~
 
+---
+
 - MovieRewardAdManager.cs　リワード動画広告用
 
  利用例）通常のメソッドです。
@@ -97,7 +102,9 @@ StartCoroutine(movieAd.showInterAdMovie());
 MovieRewardADManager rewardAd = GameObject.Find("MovieRewardAdManager").GetComponent<MovieRewardADManager>();
 rewardAd.playRewardMovie();
 ~~~
-        
+
+---
+
 - MovieNativeAdSelectStageManager.cs ネイティブ動画広告用
 　（名前変え忘れた・・・）
  
@@ -107,11 +114,14 @@ MovieNativeADSelectStageManager.Instance.startNativeMovieAD(0);
 ~~~
  
  呼び出し例は、scripts/TestAdfuri.csを参照してください。
- 
+
+---
  
 - スクロールビューについて
 
 　[SnapScrollRect](https://github.com/cyario/SnapScroll)を利用しています。ピタッとスナップして気持ちよいです。
+
+---
  
 - ページ切り替え時のネイティブ動画位置調整について
 　
@@ -127,17 +137,24 @@ MovieNativeADSelectStageManager.Instance.startNativeMovieAD(0);
 1.インスペクターでのアタッチについて
 
 　MovieInterAdManager.cs/MovieRewardADManager.cs/MovieNativeADSelectStageManager.csは
+ 
  それぞれ別のオブジェクトにアタッチしています。
  
  これは同じオブジェクトにアタッチすると、それぞれのAdfuriSDKのCallbackが上手く呼ばれなくなるためです。
  
  setMovieNativeAdViewSrcObjectなど、CallbackのあるObjectを設定する際に工夫すればいけるかもしれません。
  
+ ---
+ 
  2.iOSで動画再生時にBGMがかぶる
  
- これはAndroidでは発生しないのですが、iOSではリワード・インタースティシャル動画が再生時に、アプリ側のBGMが再生されてままでかぶってしまいます。
+ これはAndroidでは発生しないのですが、iOSではリワード・インタースティシャル動画が再生時に、
+ 
+ アプリ側のBGMが再生されてままでかぶってしまいます。
  
  解決方法がわからなかったので、iOSのみBGM停止処理、終了後に再生とすることで対処しました。
+ 
+ ---
  
  3.iOSでのビルド
  
