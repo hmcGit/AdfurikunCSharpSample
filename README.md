@@ -3,11 +3,12 @@
 ![Badge Status](https://ci-as-a-service)
 
 UnityでのAdfurikun（アドフリくん）動画広告C#サンプルコード
+
 C#で動画インタースティシャル、動画リワード、動画ネイティブ広告に対応しています。
 
 ## Description
 
-Unity でのAdfurikun（あどふりくん）[https://adfurikun.jp/adfurikun/]
+Unity での[Adfurikun（アドフリくん）](https://adfurikun.jp/adfurikun/)
 動作サンプルにC#がないので作成しました。以下に対応しています
 
 動画インタースティシャル広告
@@ -49,7 +50,7 @@ AnythingAnythingAnything
 
 ## Author
 
-[@b4b4r07](https://twitter.com/b4b4r07)
+[@hmc_j](https://twitter.com/hmc_j)
 
 
 
