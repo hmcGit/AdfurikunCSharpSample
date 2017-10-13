@@ -66,6 +66,7 @@ AndroidManifest.xmlはインポートされる物をそのまま利用してビ�
 ![h1](https://user-images.githubusercontent.com/7788005/31546764-af0a5d9a-b05f-11e7-9c71-bec53fc352ae.jpg)
 
 4.AdfurikunXXXUtilityに広告IDをセットします
+
 ![h2](https://user-images.githubusercontent.com/7788005/31546960-7e16f742-b060-11e7-90e2-df0573d69451.jpg)
 
 それぞれインスペクター上でIDをセットしてください。テスト用のIDほしいですよね。アドフリさんお願いします。
