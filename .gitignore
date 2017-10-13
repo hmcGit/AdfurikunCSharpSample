@@ -1,0 +1,26 @@
+.DS_store
+Library
+Temp
+xcode
+*.csproj
+*.sln
+*.pidb
+*.userprefs
+*.unityproj
+[Oo]bj/
+
+*.log
+# ----[ Visual Studio / MonoDevelop generated ]------- #
+*.suo
+
+# -------------[ Build ]------------------------ #
+*.html
+*.unity3d
+*.apk
+
+
+Plugins/Adfurikun
+Plugins/Android/assets
+Plugins/Android/libs
+Plugins/Android/res
+Plugins/iOS

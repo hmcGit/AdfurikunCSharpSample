@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - PreLoad
+  - Manager
+  - item/rod
+  - item/picture
+  - item/key
+  - item/gun
+  - item/guitar
+  - item/lance
+  - item/man
+  - item/woman
+  - item/poster
+  - item/book
+  - item/boss
+  - item/hammer
+  - item/teruteru1
+  - item/teruteru2
+  - item/teruteru3
+  - item/zura
+  - item/wakame
+  - item/drink
+  - item/banana1
+  - item/banana2
+  - item/banana3
+  - item/glass
+  - item/takeheri
+  - item/rope
+  - item/remocon
+  - item/camera
+  - item/cheese
+  - item/candy
+  - item/mago
+  - item/dog
+  - item/cat
+  - item/rat
+  - item/icon
+  - item/bear_l
+  - item/bear_r
+  - floor
+  - wall
+  - ad
+  - admovieframe
+  - nextFromGO
+  - nextFromCL
+  - customad
+  - customadcl
+  - customadgo
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - UIItem
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: item
+    uniqueID: 2706152087
+    locked: 0
