@@ -1,7 +1,5 @@
 # AdfurikunCSharpSample
 
-![Badge Status](https://ci-as-a-service)
-
 UnityでのAdfurikun（アドフリくん）動画広告C#サンプルコード
 
 C#で動画インタースティシャル、動画リワード、動画ネイティブ広告に対応しています。
@@ -11,9 +9,9 @@ C#で動画インタースティシャル、動画リワード、動画ネイテ
 Unity での[Adfurikun（アドフリくん）](https://adfurikun.jp/adfurikun/)
 動作サンプルにC#がないので作成しました。以下に対応しています
 
-動画インタースティシャル広告
-動画リワード広告
-動画ネイティブ広告
+-動画インタースティシャル広告
+-動画リワード広告
+-動画ネイティブ広告
 
 
 ***DEMO:***
@@ -26,7 +24,6 @@ Unity での[Adfurikun（アドフリくん）](https://adfurikun.jp/adfurikun/)
 - Awesome UI
 - ...
 
-For more information, see `awesome-tool --help`.
 
 ## Requirement
 
@@ -40,7 +37,7 @@ For more information, see `awesome-tool --help`.
 
 ## Installation
 
-    $ git clone https://github.com/b4b4r07/awesome-tool
+    $ git clone https://github.com/
 
 ## Anything Else
 
