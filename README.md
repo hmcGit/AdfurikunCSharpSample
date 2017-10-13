@@ -72,6 +72,12 @@ AndroidManifest.xmlはインポートされる物をそのまま利用してビ�
 
 それぞれインスペクター上でIDをセットしてください。テスト用のIDほしいですよね。アドフリさんお願いします。
 
+5.ビルド時の注意
+
+ネイティブ動画はどうやら広告枠申請時のパッケージ名に合わせないと再生されません
+
+リワード動画とインタースティシャルは任意でいけます
+
 ## Usage
 
 1.実行したら各ボタンを押して下さい。
@@ -133,20 +139,27 @@ MovieNativeADSelectStageManager.Instance.startNativeMovieAD(0);
  ネイティブ動画の表示位置を設定するために「movieAdFrame0～2」のオブジェクトが各ページに設定されています。
 　
 ## Notice
+1.サンプル実行について
 
-1.インスペクターでのアタッチについて
+リワード動画、インタースティシャル動画はパッケージ名任意でも再生されますが
+ 
+ ネイティブ動画はどうやら広告枠申請時のパッケージ名に合わせないと再生されません
+ 
+ NO_ADのエラーコードがかえってきます。ちなみに公式のサンプルもです。
 
-　MovieInterAdManager.cs/MovieRewardADManager.cs/MovieNativeADSelectStageManager.csは
+2.インスペクターでのアタッチについて
+
+MovieInterAdManager.cs/MovieRewardADManager.cs/MovieNativeADSelectStageManager.csは
  
- それぞれ別のオブジェクトにアタッチしています。
+それぞれ別のオブジェクトにアタッチしています。
  
- これは同じオブジェクトにアタッチすると、それぞれのAdfuriSDKのCallbackが上手く呼ばれなくなるためです。
+これは同じオブジェクトにアタッチすると、それぞれのAdfuriSDKのCallbackが上手く呼ばれなくなるためです。
  
  setMovieNativeAdViewSrcObjectなど、CallbackのあるObjectを設定する際に工夫すればいけるかもしれません。
  
  ---
  
- 2.iOSで動画再生時にBGMがかぶる
+3.iOSで動画再生時にBGMがかぶる
  
  これはAndroidでは発生しないのですが、iOSではリワード・インタースティシャル動画が再生時に、
  
@@ -156,7 +169,7 @@ MovieNativeADSelectStageManager.Instance.startNativeMovieAD(0);
  
  ---
  
- 3.iOSでのビルド
+4.iOSでのビルド
  
  Editor/AdfurikunMovieRewardPostProcessにて以下を設定してビルドしました。
  ~~~
